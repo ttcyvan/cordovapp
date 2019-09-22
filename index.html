@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+<!-- 
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' https://www21.netspace.fr; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+-->
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<!-- jQuery CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!-- jQuery Core library -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- jQuery Mobile library -->
+<script type="text/javascript" src="js/jquery.mobile.js"></script>
+<!--  -->
+<title>Hello World</title>
+</head>
+<body class="ui-body-a">
+	<!-- /page 1 -->
+	<div data-role="page" data-rel="dialog" id="p1">
+		<div data-role="header" data-position="fixed" class="ui-header">
+			<div data-role="navbar" data-grid="c" class="ui-navbar">
+				<ul>
+					<li><a href="#p1" class="ui-btn-active">Menu 1</a></li>
+					<li><a href="#p2" class="ui-btn">Menu 2</a></li>
+					<li><a href="#p3" class="ui-btn">Menu 3</a></li>
+					<li><a href="#p4" class="ui-btn">Formulaire</a></li>
+				</ul>
+			</div>
+			<!-- /navbar 1 -->
+		</div>
+		<!-- /header 1 -->
+		<div role="main" class="ui-content">
+			<h2>Section 1 : What is Lorem Ipsum ?</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+				of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+				in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+				vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+				quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+				minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+				nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+		</div>
+		<!-- /content 1 -->
+		<div data-role="footer" data-position="fixed">
+			<a id="takePicture" class="ui-btn ui-corner-all ui-center ui-shadow ui-icon-camera ui-btn-icon-left camera-btn">Take Picture</a>
+		</div>
+		<!-- /footer -->
+	</div>
+
+	<!-- /page 2 -->
+	<div data-role="page"  id="p2">
+		<div data-role="header" class="ui-header">
+			<div data-role="navbar" data-grid="c" class="ui-navbar">
+				<ul>
+					<li><a href="#p1" class="ui-btn">Menu 1</a></li>
+					<li><a href="#p2" class="ui-btn-active">Menu 2</a></li>
+					<li><a href="#p3" class="ui-btn">Menu 3</a></li>
+					<li><a href="#p4" class="ui-btn">Formulaire</a></li>
+				</ul>
+			</div>
+			<!-- /navbar 2 -->
+		</div>
+		<!-- /header 2 -->
+		<div role="main" class="ui-content">
+			<h2>Section 2 : Why do we use it?</h2>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+				normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+				their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+				purpose (injected humour and the like).</p>
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+				non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+				nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+				debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
+				maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+		</div>
+		<!-- /content 2 -->
+		<div data-role="footer" data-position="fixed"></div>
+		<!-- /footer 2 -->
+	</div>
+
+	<!-- /page 3 -->
+	<div data-role="page" id="p3">
+		<div data-role="header" class="ui-header">
+			<div data-role="navbar" data-grid="c" class="ui-navbar">
+				<ul>
+					<li><a href="#p1" class="ui-btn">Menu 1</a></li>
+					<li><a href="#p2" class="ui-btn">Menu 2</a></li>
+					<li><a href="#p3" class="ui-btn-active">Menu 3</a></li>
+					<li><a href="#p4" class="ui-btn">Formulaire</a></li>
+				</ul>
+			</div>
+			<!-- /navbar 3 -->
+		</div>
+		<!-- /header 3 -->
+		<div role="main" class="ui-content">
+			<h2>Section 3 : Why do we use it?</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id augue nunc. Aliquam vitae blandit nunc, a mattis magna. Quisque ac consequat mauris. Sed dapibus elit vel velit convallis
+				convallis. Nulla malesuada quam magna. Maecenas euismod, lacus in volutpat ultricies, risus felis placerat sapien, id ultricies eros sem quis nisi. Quisque congue leo vitae sapien consectetur,
+				efficitur aliquet sapien vestibulum. Vestibulum interdum bibendum eros et lacinia. Sed imperdiet vehicula tellus id ultricies. Fusce rutrum maximus tortor, in aliquam quam elementum non. Aliquam
+				pharetra dolor eget feugiat imperdiet.</p>
+			<p>Pellentesque molestie quis risus ac faucibus. Phasellus sapien orci, condimentum in lorem ut, consequat maximus lectus. Sed nec nulla lobortis, semper ex sit amet, suscipit leo. Duis
+				malesuada elementum nisl, id eleifend eros tristique vitae. Maecenas dictum sem nulla, non porta leo tincidunt sed. Curabitur eget lacus magna. Morbi sollicitudin urna nulla, quis imperdiet turpis
+				condimentum sed. Donec fermentum metus neque, nec congue tortor scelerisque ac. Aenean metus sapien, pulvinar vel interdum et, mattis eu metus. Maecenas finibus mollis odio sed ullamcorper. Donec
+				rhoncus, sem eu tristique tempus, urna risus feugiat libero, vitae mattis massa leo quis lacus. In id lorem odio. Praesent non maximus quam. Orci varius natoque penatibus et magnis dis parturient
+				montes, nascetur ridiculus mus. Donec vel tincidunt leo.</p>
+		</div>
+		<!-- /content 3 -->
+		<div data-role="footer" data-position="fixed"></div>
+		<!-- /footer 3 -->
+	</div>
+	
+	<!-- /page 4 -->
+	<div data-role="page" id="p4">
+		<div data-role="header" class="ui-header">
+			<div data-role="navbar" data-grid="c" class="ui-navbar">
+				<ul>
+					<li><a href="#p1" class="ui-btn">Menu 1</a></li>
+					<li><a href="#p2" class="ui-btn">Menu 2</a></li>
+					<li><a href="#p3" class="ui-btn">Menu 3</a></li>
+					<li><a href="#p4" class="ui-btn-active">Formulaire</a></li>
+				</ul>
+			</div>
+			<!-- /navbar 4 -->
+		</div>
+		<!-- /header 4 -->
+		<div  role="main" class="ui-content"  data-ajax="true">
+			<!--  formulaire -->
+			<div id="form_content">
+			</div>
+		</div>
+		<!-- /content 4 -->
+		<div data-role="footer" data-position="fixed"></div>
+		<!-- /footer 4 -->
+	</div>
+
+<!-- Cordova javascript -->
+<!--
+<script type="text/javascript" src="cordova.js"></script>
+-->
+<!-- Custom javascript -->
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
